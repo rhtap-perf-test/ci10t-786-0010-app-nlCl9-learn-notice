@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-obru
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0010-tenant/ci10t-786-0010-app/devfile-sample-obru@sha256:58257de5a9ee40f3d64338028c8b1dee4b755fac2b46eaf36fbb52c09ff7242d
+        name: my-nodejs
+        resources: {}
+status: {}
